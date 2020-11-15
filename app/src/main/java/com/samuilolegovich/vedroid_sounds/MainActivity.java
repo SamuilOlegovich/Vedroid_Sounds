@@ -11,10 +11,8 @@ import android.widget.ImageView;
 
 
 public class MainActivity extends AppCompatActivity {
-    private MediaPlayer catSound;
-    private MediaPlayer dogSound;
-    private ImageView cat;
-    private ImageView dog;
+    private MediaPlayer catSound, dogSound;
+    private ImageView cat, dog;
 
 
     @Override
@@ -28,7 +26,6 @@ public class MainActivity extends AppCompatActivity {
 
         cat = (ImageView) findViewById(R.id.cat);
         dog = (ImageView) findViewById(R.id.dog);
-
 
         imageClick();
     }
@@ -52,8 +49,6 @@ public class MainActivity extends AppCompatActivity {
                 }
         );
     }
-
-
 
     private void soundPlay(MediaPlayer mediaPlayer) {
         mediaPlayer.start();
